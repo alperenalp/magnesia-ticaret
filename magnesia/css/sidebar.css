@@ -1,0 +1,40 @@
+a {
+    text-decoration:none;
+}
+
+
+  .view-header{
+    background-color:#FCC40E;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    padding:15px 20px;
+  }
+  .view-header a h2{
+    color: black;
+  }
+  .views-row{
+      margin-bottom: 10px;
+  }
+  .item{
+    display: flex;
+  }
+  .left-area{
+    width:30%;
+  }
+  .right-area{
+    width: 70%;
+    margin-left: 5%;
+  }
+  .right-area h3{
+    font-size: 18px;
+    color: black;
+  }
+  .right-area h3:hover{
+    color:#0288D1;
+    transition:0.2s;
+  }
+  
+
+  

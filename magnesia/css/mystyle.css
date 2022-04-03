@@ -1,0 +1,234 @@
+
+/*Sıfırlama*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+html {
+    font-size: 12px;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.navbar{
+  background-color: rgb(0, 204, 255, 0.7);
+  box-sizing: border-box;
+}
+.navbar-nav a{
+  font-size: 20px;
+  padding:10px; 
+}
+.navbar-nav a:hover{
+  font-weight: 500;
+}
+
+.sliderYazi p{
+  font-size: 15px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    position: relative;
+    width: 80%;
+    margin: 5px auto;
+}
+#content{
+    padding: 27px;
+    width: 100%;
+    font-size: 16px;
+    min-height: 1000px;
+    background-color: white;
+}
+
+
+/* Anasayfa */
+.ayrac{
+  border-top: 3px solid #bebebe;
+  max-width: 400px;
+  margin: 25px auto;
+}
+.ibeyaz{
+  color: #bebebe;
+  position: relative;
+  top: -55px;
+  font-size: 40px;
+  border:10px solid white;
+  background-color: white;
+}
+.content-ayrac{
+  display: flex;
+}
+.fixed-column-content{
+  width: 75%;
+}
+.fixed-column-sidebar{
+  width: 25%;
+  box-sizing: border-box;
+}
+.layout-sidebar-first{
+  margin-left: 10%;
+}
+
+
+
+
+/* Urunler Sayfasi*/
+.content-ayir{
+  display: flex;
+  box-sizing: border-box;
+}
+.left-part{
+    margin-top: 5%;
+    width: 20%;
+}
+.main-part{
+    width: 75%;
+    padding: 10px;
+    margin-left: 3%;
+}
+
+
+
+/* Kategori Menusu */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.menu li {
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+  
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+
+
+
+/* FOOTER START */
+footer{
+  display: flex;  /* divleri yan yana koyar*/
+  flex-wrap: wrap; /* eger sigmazsa alta atar mesela 4 div var tanesi %30 1 tanesi alta inecektir */
+  width: 100%;
+  height: auto;
+  background-color: #171717;
+  color: white;
+  justify-content: center;
+  font-size: 15px;
+}
+
+footer .icerik{
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+footer .alt{
+  border-top: 1px solid white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .alt .sosyal{
+  width: 15%;
+  font-size: 30px;
+  display: flex;
+}
+footer .alt .copyright{
+  margin-top: auto;
+  width: 15%;
+}
+
+footer i {margin: 10px;}
+footer a {color:white;}
+/*nth:child fonksiyonu linkleri seçmeyi sağlar örneğin alttaki fonk sosyal sınıfının içindeki 1.linki seçer*/
+.sosyal a:nth-child(1):hover{color: blue;}              
+.sosyal a:nth-child(2):hover{color: rgb(0, 162, 255);}
+.sosyal a:nth-child(3):hover{color: rgb(255, 0, 119);}
+.sosyal a:nth-child(4):hover{color: rgb(255, 38, 0);}
+.sosyal a:nth-child(5):hover{color: rgb(22, 112, 0);}
+
+/*Footer Bitis*/
+
+
+
+
+/* RESPONSIVE GORUNUM */
+@media only screen and (max-width:800px){
+
+  /*urunler */
+  #container{
+    width: 100%;
+  }
+  .row{
+    justify-content: center;
+  }
+  .content-ayir{
+    display: block;
+  }
+  .left-part{
+    width: 100%;
+  }
+  .main-part{
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+
+
+ 
+}
+
+@media only screen and (max-width:1400px){
+  /*Responsive Sidebar*/
+  .fixed-column-content{
+    width: 100%;
+  }
+  .fixed-column-sidebar{
+    display: none;
+  }
+
+
+  /*Responsive Footer Kısmı*/
+  footer{
+    height: auto;
+  }
+  footer .icerik{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .alt{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .alt .copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .alt .sosyal{
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
